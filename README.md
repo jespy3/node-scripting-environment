@@ -14,7 +14,7 @@ Ensure `docker compose` is available on current version of docker.
 
 Run
 ```
-docker compose build
+docker compose -f env-node/compose.yaml build
 ```
 
 ## Running the docker container
