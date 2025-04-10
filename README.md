@@ -30,13 +30,13 @@ These `<command>`s are run as if you are in the container. ie. start container; 
 You can run `command`s like:
 ```
 docker compose -f env-node/compose.yaml run --rm box node --version
-docker compose -f env-node/compose.yaml run --rm box node hello_world.js
+docker compose -f env-node/compose.yaml run --rm box node env-node/hello_world.js
 ```
 
 To avoid typing out `docker compose -f env-node/compose.yaml run --rm appserver` everytime, use the `run.sh` script like so:
 ```
 ./run.sh node --version
-./run.sh node hello_world.js
+./run.sh node env-node/hello_world.js
 ```
 
 **Tips:**
@@ -53,6 +53,6 @@ docker compose -f env-node/compose.yaml run --rm box
 
 # You will be in the container itself as your local environment and can run:
 node --version
-node hello_world.js
+node env-node/hello_world.js
 ```
 
