@@ -26,6 +26,7 @@ docker compose exec box bash
 
 In the container, run:
 ```
+node hello_world.js
 ```
 
 ## Optional workflow
